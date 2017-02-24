@@ -16,5 +16,14 @@ namespace CatchAFish
         {
             InitializeComponent();
         }
+        public Random r = new Random();
+        private void Fish_MouseEnter(object sender, EventArgs e)
+        { 
+            int x = r.Next(0, 925);
+            int y = r.Next(0, 445);
+            this.Fish.Location = new System.Drawing.Point(x, y);
+        }
+        
+        
     }
 }
